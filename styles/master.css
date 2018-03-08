@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(20, 2fr);
+  grid-template-rows: repeat(6, minmax(0px, auto));
+  grid-gap: 1em;
+  margin: 1em;
+  width: 100%;
+}
+
+.container div {
+  background: coral;
+}
+
+.container div:nth-child(even){
+  background: grey;
+}
+
+.one {
+  grid-column: 1 / 11;
+  grid-row: 1 / 23;
+}
+
+.two{
+  grid-column: 11 / 16;
+  grid-row: 1 / 12;
+}
+
+.three {
+  grid-column: 11 / 16;
+  grid-row: 12 / 23;
+}
+
+.four {
+  grid-column: 16 / 21;
+  grid-row: 1 / 23;
+}
+
+.five {
+  grid-column: 1 / 6;
+  grid-row: 23 / 43;
+}
+
+.six {
+  grid-column: 6 / 11;
+  grid-row: 23 / 33;
+}
+
+.seven {
+  grid-column: 6 / 11;
+  grid-row: 33 / 43;
+}
+
+.eight {
+  grid-column: 11 / 21;
+  grid-row: 23 / 43;
+}
+
+.nine {
+  grid-column: 1 / 6;
+  grid-row: 43 / 52;
+}
+
+.ten {
+  grid-column: 1 / 6;
+  grid-row: 52 / 61;
+}
+
+.eleven {
+  grid-column: 6 / 16;
+  grid-row: 43 / 61;
+}
+
+.twelve {
+  grid-column: 16 / 21;
+  grid-row: 43 / 61;
+}
+
+.thirteen {
+  grid-column: 1 / 11;
+  grid-row: 61 / 81;
+}
+
+.fourteen {
+  grid-column: 11 / 16;
+  grid-row: 61 / 81;
+}
+
+.fifteen {
+  grid-column: 16 / 21;
+  grid-row: 61 / 71;
+}
+
+.sixteen {
+  grid-column: 16 / 21;
+  grid-row: 71 / 81;
+}
+
+.seventeen {
+  grid-column: 1 / 11;
+  grid-row: 81 / 99;
+}
+
+.eighteen {
+  grid-column: 11 / 21;
+  grid-row: 81 / 99;
+}
+
+.nineteen {
+  grid-column: 1 / 11;
+  grid-row: 99 / 118;
+}
+
+.twenty {
+  grid-column: 11 / 21;
+  grid-row: 99 / 118;
+}
